@@ -11,5 +11,6 @@ features:
   - encoder
   - studio
 siblings:
+  - corne_xiao_v2_dongle
   - corne_xiao_v2_left
   - corne_xiao_v2_right
