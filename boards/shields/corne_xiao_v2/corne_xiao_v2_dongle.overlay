@@ -18,6 +18,13 @@
       zmk,physical-layout = &corne_xiao_6col_layout;
     };
 
+    mock_kscan: mock_kscan_0 {
+      compatible = "zmk,kscan-mock";
+      columns = <0>;
+      rows = <0>;
+      events = <0>;
+    };
+
     default_transform: keymap_transform_0 {
       compatible = "zmk,matrix-transform";
       columns = <12>;
@@ -61,6 +68,12 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) RC(2,8) 
         , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
+    };
+
+    corne_xiao_6col_layout: corne_xiao_6col_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
     };
 
     left_encoder: encoder_left {
