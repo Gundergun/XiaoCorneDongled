@@ -13,19 +13,6 @@
 #
 ---
 include:
-# Revision 1
-  - board: xiao_ble
-    shield: corne_xiao_v1_dongle rgbled_adapter
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: xiao_ble
-    shield: corne_xiao_v1_left rgbled_adapter
-  - board: xiao_ble
-    shield: corne_xiao_v1_right rgbled_adapter
-  - board: xiao_ble
-    shield: settings_reset
-
-# Revision 2
   - board: xiao_ble
     shield: corne_xiao_v2_dongle rgbled_adapter
     snippet: studio-rpc-usb-uart
